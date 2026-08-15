@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:orientation="vertical" android:background="@color/bg" android:padding="16dp"
+ android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="rtl">
+<ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+<TextView android:text="Global Smart Plug" android:textColor="@color/green" android:textSize="25sp" android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:text="لوحة التحكم" android:textColor="@color/white" android:textSize="20sp" android:layout_marginTop="4dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<LinearLayout android:background="@drawable/panel" android:orientation="vertical" android:padding="16dp" android:layout_marginTop="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+<LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+<LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content">
+<TextView android:text="جهاز المشترك" android:textColor="@color/white" android:textSize="18sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+<TextView android:id="@+id/online" android:text="● Online" android:textColor="@color/green" android:textSize="14sp" android:layout_marginTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>
+<TextView android:text="MTTL-W01" android:textColor="@color/muted" android:textSize="13sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>
+<TextView android:text="المشترك الرئيسي" android:textColor="@color/white" android:textSize="17sp" android:gravity="center" android:layout_marginTop="18dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<Switch android:id="@+id/master" android:layout_gravity="center" android:checked="true" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+<TextView android:id="@+id/masterState" android:text="الحالة: تشغيل" android:textColor="@color/green" android:textSize="15sp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>
+<TextView android:text="المخارج" android:textColor="@color/white" android:textSize="19sp" android:textStyle="bold" android:layout_marginTop="18dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<LinearLayout android:orientation="vertical" android:background="@drawable/panel" android:padding="8dp" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+<LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"><TextView android:text="مخرج 1" android:textColor="@color/white" android:textSize="17sp" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/><Switch android:id="@+id/o1" android:checked="true" android:layout_width="wrap_content" android:layout_height="wrap_content"/></LinearLayout>
+<LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"><TextView android:text="مخرج 2" android:textColor="@color/white" android:textSize="17sp" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/><Switch android:id="@+id/o2" android:checked="true" android:layout_width="wrap_content" android:layout_height="wrap_content"/></LinearLayout>
+<LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"><TextView android:text="مخرج 3" android:textColor="@color/white" android:textSize="17sp" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/><Switch android:id="@+id/o3" android:layout_width="wrap_content" android:layout_height="wrap_content"/></LinearLayout>
+<LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"><TextView android:text="مخرج 4" android:textColor="@color/white" android:textSize="17sp" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/><Switch android:id="@+id/o4" android:layout_width="wrap_content" android:layout_height="wrap_content"/></LinearLayout>
+</LinearLayout>
+<LinearLayout android:orientation="horizontal" android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+<TextView android:text="القدرة\n1250 W" android:textColor="@color/white" android:textSize="15sp" android:gravity="center" android:background="@drawable/panel" android:padding="14dp" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp"/>
+<TextView android:text="الجهد\n220 V" android:textColor="@color/white" android:textSize="15sp" android:gravity="center" android:background="@drawable/panel" android:padding="14dp" android:layout_marginStart="8dp" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp"/>
+<TextView android:text="التيار\n5.7 A" android:textColor="@color/white" android:textSize="15sp" android:gravity="center" android:background="@drawable/panel" android:padding="14dp" android:layout_marginStart="8dp" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp"/>
+</LinearLayout>
+<Button android:id="@+id/addDevice" android:text="＋ إضافة جهاز" android:textColor="@color/white" android:background="@drawable/button_dark" android:layout_marginTop="14dp" android:layout_width="match_parent" android:layout_height="52dp"/>
+</LinearLayout>
+</ScrollView>
+<LinearLayout android:orientation="horizontal" android:gravity="center" android:background="@color/panel" android:layout_width="match_parent" android:layout_height="58dp">
+<TextView android:text="الرئيسية" android:textColor="@color/green" android:gravity="center" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent"/>
+<TextView android:text="الأجهزة" android:textColor="@color/muted" android:gravity="center" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent"/>
+<TextView android:text="جدولة" android:textColor="@color/muted" android:gravity="center" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent"/>
+<TextView android:text="حسابي" android:textColor="@color/muted" android:gravity="center" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent"/>
+</LinearLayout>
+</LinearLayout>
