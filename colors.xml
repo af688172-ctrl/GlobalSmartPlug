@@ -1,0 +1,10 @@
+<resources>
+    <color name="bg">#07131B</color>
+    <color name="panel">#0D202B</color>
+    <color name="panel2">#102A36</color>
+    <color name="green">#63E63D</color>
+    <color name="green_dark">#2FAE22</color>
+    <color name="white">#FFFFFF</color>
+    <color name="muted">#9AAAB4</color>
+    <color name="line">#23414D</color>
+</resources>
